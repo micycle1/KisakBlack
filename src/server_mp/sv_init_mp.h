@@ -138,6 +138,7 @@ extern const dvar_t *sv_minPing;
 extern const dvar_t *sv_maxPing;
 extern const dvar_t *sv_timeout;
 extern const dvar_t *sv_connectTimeout;
+extern const dvar_t *sv_steamauth;
 extern const dvar_t *sv_floodProtect;
 extern const dvar_t *sv_showCommands;
 extern const dvar_t *sv_writeConfigStrings;

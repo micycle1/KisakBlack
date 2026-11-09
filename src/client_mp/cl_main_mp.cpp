@@ -2036,12 +2036,21 @@ void __cdecl CL_CheckForResend(int localClientNum)
                     //NET_OutOfBandPrint(Com_LocalClient_GetNetworkID(localClientNum), serverAddress, va("getchallenge 0 \"%s\"", md5Str));
                     //NET_OutOfBandPrint(Com_LocalClient_GetNetworkID(localClientNum), clc->serverAddress, va("getchallenge 0 \"%s\"", dummy));
 
-                    bool got = Steam_GetRawClientTicket(&pSteamClientTicket, &steamClientTicketSize);
-                    iassert(got);
-                    b64_encode(pSteamClientTicket, steamClientTicketSize, steamTicketBase64);
-                    iassert(b64_decode(steamTicketBase64, strlen((char *)steamTicketBase64), steamTicketDecodeBuf) == steamClientTicketSize);
+                    if (Steam_HasClientTicket())
+                    {
+                        bool got = Steam_GetRawClientTicket(&pSteamClientTicket, &steamClientTicketSize);
+                        iassert(got);
+                        b64_encode(pSteamClientTicket, steamClientTicketSize, steamTicketBase64);
+                        iassert(b64_decode(steamTicketBase64, strlen((char *)steamTicketBase64), steamTicketDecodeBuf) == steamClientTicketSize);
 
-                    NET_OutOfBandPrint(Com_LocalClient_GetNetworkID(localClientNum), clc->serverAddress, va("getchallenge 0 \"%s\" \"%llu\"", steamTicketBase64, Steam_GetClientSteamID64()));
+                        NET_OutOfBandPrint(Com_LocalClient_GetNetworkID(localClientNum), clc->serverAddress, va("getchallenge 0 \"%s\" \"%llu\"", steamTicketBase64, Steam_GetClientSteamID64()));
+                    }
+                    else
+                    {
+                        // No Steam ticket (see CL_CDKeyValidate): a server with "sv_steamauth 0" accepts this placeholder
+                        // ticket and a made-up Steam ID.
+                        NET_OutOfBandPrint(Com_LocalClient_GetNetworkID(localClientNum), clc->serverAddress, va("getchallenge 0 \"LAN\" \"%llu\"", 0x0110000100000000ULL | (uint32_t)clc->qport));
+                    }
 
                     *(&clc->nonce + 1) = 0;
                     clc->nonce = 0;

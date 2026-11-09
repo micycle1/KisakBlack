@@ -38,6 +38,10 @@ However, there is a non-zero chance of some type of binary exploitation when pla
 ## Troubleshooting
 - ***Can't Connect to Dedicated Server*** :
   -  Check `net_ip` and `net_port`, the server will increment the port if the preferred one isn't available but the client won't sweep upwards.
+- ***"Key Code is not valid" when connecting*** :
+  - The client could not get a Steam auth ticket (Steam isn't running, or the account doesn't own Black Ops).
+    A server accepts clients without a ticket by default (`sv_steamauth 0`); start it with `+set sv_steamauth 1` to require one.
+    The client still connects without a ticket and a server that requires one answers "This server requires a Steam auth ticket".
  - ***DLL Error upon launch*** :
    - You didn't copy over the necessary runtime DLL's
 

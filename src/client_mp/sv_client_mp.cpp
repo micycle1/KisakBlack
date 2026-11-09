@@ -164,9 +164,24 @@ void __cdecl SV_GetChallenge(netadr_t from)
     char *clientSteamID64 = (char *)SV_Cmd_Argv(3);
     unsigned char decodedSteamTicket[1024 + 128]{ 0 };
 
+    // With "sv_steamauth 0", clients join without a Steam ticket (e.g. when the Steam account doesn't own the game).
+    // Their Steam ID is taken on trust. "sv_steamauth 1" requires a valid ticket from everyone.
+    if (!sv_steamauth->current.enabled)
+    {
+        uint64_t lanSteamID64 = clientSteamID64[0] ? strtoull(clientSteamID64, NULL, 10) : 0;
+        if (!lanSteamID64)
+            lanSteamID64 = 0x0110000100000000ULL | (uint32_t)challenge->challenge; // never 0
+        challenge->steamID64 = lanSteamID64;
+        challenge->pingTime = svs.time;
+        Com_Printf(15, "sv_steamauth 0: accepting client without a Steam ticket (%llu)\n", lanSteamID64);
+        NET_OutOfBandPrint(NS_SERVER, from, va("challengeResponse %i", challenge->challenge));
+        return;
+    }
+
     if (!clientSteamTicketBase64[0] || !clientSteamID64[0])
     {
-        iassert(0); // guy didn't send enough information
+        // guy didn't send enough information (no ticket: the client's Steam isn't running, or it doesn't own the game)
+        NET_OutOfBandPrint(NS_SERVER, from, "error\xA\x15This server requires a Steam auth ticket");
         return;
     }
 

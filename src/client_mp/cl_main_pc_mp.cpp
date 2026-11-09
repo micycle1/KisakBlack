@@ -342,7 +342,12 @@ void __cdecl CL_ConnectHackDW()
 bool __cdecl CL_CDKeyValidate(netadr_t addr)
 {
 #ifdef WIN32
-    return Steam_UpdateClientAuthTicket(addr);
+    if (Steam_UpdateClientAuthTicket(addr))
+        return true;
+
+    // No Steam ticket (Steam isn't running, or the account doesn't own the game): connect anyway. A server with
+    // "sv_steamauth 0" accepts that; one that requires a ticket rejects it with an error message.
+    return true;
 #else
 #error Steam Auth for Arch
     return false;

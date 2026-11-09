@@ -213,8 +213,17 @@ void Steam_Shutdown()
 	g_steamID = 0;
 }
 
+bool Steam_HasClientTicket()
+{
+	return steamClientTicketSize && steamClientTicket[0];
+}
+
 bool Steam_UpdateClientAuthTicket(netadr_t serverIpv4)
 {
+	// forget any ticket from an earlier connect, so a failure below can't send a stale one
+	steamClientTicketSize = 0;
+	steamClientTicket[0] = 0;
+
 	if (!g_steamInitialized)
 	{
 		return false;
@@ -260,6 +269,11 @@ bool Steam_CheckClientTicket(const void* pAuthTicket, uint32 authTicketLen, uint
 void Steam_OnClientDropped(uint64_t steamID64)
 {
 	iassert(steamID64);
+
+	if (!g_steamInitialized) // server running without Steam (sv_steamauth 0)
+	{
+		return;
+	}
 
 	CSteamID sid;
 	sid.SetFromUint64(steamID64);

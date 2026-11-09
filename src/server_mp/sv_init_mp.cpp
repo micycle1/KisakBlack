@@ -63,6 +63,7 @@ const dvar_t *sv_minPing;
 const dvar_t *sv_maxPing;
 const dvar_t *sv_timeout;
 const dvar_t *sv_connectTimeout;
+const dvar_t *sv_steamauth;
 const dvar_t *sv_floodProtect;
 const dvar_t *sv_showCommands;
 const dvar_t *sv_writeConfigStrings;
@@ -1018,6 +1019,11 @@ void __cdecl SV_Init()
     sv_minPing = _Dvar_RegisterInt("sv_minPing", 0, 0, 999, 5u, "Minimum ping allowed on the server");
     sv_maxPing = _Dvar_RegisterInt("sv_maxPing", 0, 0, 999, 5u, "Maximum ping allowed on the server");
     sv_timeout = _Dvar_RegisterInt("sv_timeout", 240, 0, 1800, 0, "seconds without any message");
+    sv_steamauth = _Dvar_RegisterBool(
+                                                "sv_steamauth",
+                                                0,
+                                                0,
+                                                "Require a valid Steam auth ticket to connect. 0 lets clients join without one");
     sv_connectTimeout = _Dvar_RegisterInt(
                                                 "sv_connectTimeout",
                                                 80,
