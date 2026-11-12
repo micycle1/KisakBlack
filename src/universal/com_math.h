@@ -42,7 +42,9 @@ struct float44 // sizeof=0x40
         };
 };
 
-union alignas(16) float4 
+// Not 16-byte aligned in the original: struct sizes that embed it (trace_t 0x38, colgeom_visitor_t 0x70,
+// IKState 0xE60, ...) only match the binary with 4-byte alignment.
+union float4
 {
         float v[4];
         unsigned int u[4];
@@ -82,11 +84,12 @@ struct vector4 : vector3 // sizeof=0x40
     float4 w;                           // XREF: CreateClipMatrix+94/r
 };
 
-struct alignas(16) hybrid_vector // sizeof=0x10
+struct hybrid_vector // sizeof=0x10
 {                                                                             // XREF: colgeom_visitor_t/r
         float4 vec;                                                 // XREF: AimTarget_IsTargetVisible+1B/w
 };
 static_assert(sizeof(hybrid_vector) == 16);
+static_assert(alignof(hybrid_vector) == 4);
 
 struct orientation_t // sizeof=0x30
 {                                                                             // XREF: .rdata:orientation_t const orIdentity/r

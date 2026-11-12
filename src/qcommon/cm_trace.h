@@ -164,6 +164,7 @@ struct trace_t // sizeof=0x38
         memset(this, 0, sizeof(trace_t)); // Blops added this, might help
     }
 };
+static_assert(sizeof(trace_t) == 0x38);
 
 struct cbrushside_t // sizeof=0xC
 {                                                                             // XREF: CM_TraceThroughBrush/r

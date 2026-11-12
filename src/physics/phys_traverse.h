@@ -105,6 +105,7 @@ struct colgeom_visitor_t : visitor_base_t // sizeof=0x70
     void intersect_box_brushnode(struct cLeafBrushNode_s *node);
     void intersect_box_partitions_r(struct CollisionAabbTree *aabbTree);
 };
+static_assert(sizeof(colgeom_visitor_t) == 0x70);
 
 struct query_brush_model_gjk_geom_visitor : colgeom_visitor_t // sizeof=0x74
 {                                                                             // XREF: ?query_brush_model_gjk_geom@@YAXGHPAVgjk_collision_visitor@@@Z/r
