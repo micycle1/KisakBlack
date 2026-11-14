@@ -10,7 +10,7 @@ set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(TL_DIR  "${CMAKE_CURRENT_SOURCE_DIR}/tl")
 set(THIRD_PARTY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/third_party")
 
-include(cmake_files.cmake)
+include(sources.cmake)
 
 # DirectX SDK (June 2010): -DDXSDK_DIR=<folder with Include\ and Lib\>, or the DXSDK_DIR environment variable
 # (the installer sets it), or the default install folder. An extracted copy of the SDK works too.
