@@ -351,6 +351,8 @@ void __cdecl DeathGrenadeDrop(gentity_s *self)
             grenadeWeaponIndex = self->client->ps.offHandIndex;
         else
             grenadeWeaponIndex = self->client->ps.weapon;
+        if (!grenadeWeaponIndex)
+            return;
         launchvel[0] = G_crandom();
         launchvel[1] = G_crandom();
         launchvel[2] = G_crandom();
