@@ -5138,7 +5138,7 @@ void Scr_Objective_OnEntity()
     ClearObjective_OnEntity(&level.objectives[objNum]);
     Entity = Scr_GetEntity(1u);
     Entity->r.svFlags |= 0x10u;
-    level.objectivesClientMask[6 * objNum - 189][0] = Entity->s.number;
+    level.objectives[objNum].entNum = Entity->s.number;
 }
 
 void Scr_Objective_Current()
@@ -15538,8 +15538,8 @@ void GScr_SetScoreboardColumns()
         for ( i = 0; i < 4; ++i )
         {
             String = Scr_GetString(i, SCRIPTINSTANCE_SERVER);
-            level.teamScores[i - 24] = CScr_GetColumnTypeByName(String);
-            if ( !level.teamScores[i - 24] )
+            level.matchState.unarchivedState.scoreboardColumnTypes[i] = (scoreboardColumnType_t)CScr_GetColumnTypeByName(String);
+            if ( !level.matchState.unarchivedState.scoreboardColumnTypes[i] )
             {
                 v1 = Scr_GetString(i, SCRIPTINSTANCE_SERVER);
                 Com_PrintError(16, "Invalid param: %s is not a valid column type.\n", v1);
