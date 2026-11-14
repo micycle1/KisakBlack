@@ -39,7 +39,7 @@ int __cdecl Sys_SystemMemoryMB()
             }
         }
         v8 = (double)statusEx.ullTotalPhys * 0.00000095367432;
-        sysMB = (int)(v8 + 0.4999999990686774);
+        sysMB = (int)ceilf(v8);
         if ( (double)statusEx.ullTotalPhys > (double)sysMB * 1048576.0 || sysMB > 1024 )
             return 1024;
         return sysMB;
@@ -60,7 +60,7 @@ int __cdecl Sys_SystemMemoryMB()
             }
         }
         v7 = (double)status.dwTotalPhys * 0.00000095367432;
-        sysMBa = (int)(v7 + 0.4999999990686774);
+        sysMBa = (int)ceilf(v7);
         if ( (double)status.dwTotalPhys > (double)sysMBa * 1048576.0 || sysMBa > 1024 )
             return 1024;
         return sysMBa;

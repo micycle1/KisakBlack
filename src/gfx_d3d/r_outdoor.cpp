@@ -218,8 +218,7 @@ int __cdecl Outdoor_TransformToTextureClamped(int dimension, float inWorld)
     int v4; // [esp+4h] [ebp-18h]
     int unclamped; // [esp+14h] [ebp-8h]
 
-    unclamped = (int)((float)((float)(inWorld * outdoorGlob.scale[dimension]) + outdoorGlob.add[dimension])
-                                    - 0.4999999990686774);
+    unclamped = (int)floorf((float)((float)(inWorld * outdoorGlob.scale[dimension]) + outdoorGlob.add[dimension]));
     v4 = outdoorMapSize[dimension] - 1;
     if ( v4 <= 0
         && !Assert_MyHandler("c:\\projects_pc\\cod\\codsrc\\src\\universal\\com_math.h", 719, 0, "%s", "min < max") )

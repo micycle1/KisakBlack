@@ -285,9 +285,8 @@ bool __cdecl PickAabbSplitPlane(
     if ( (float)(globalMaxs[smallestAxis] - globalMins[smallestAxis]) > (float)(globalMaxs[2] - globalMins[2]) )
         smallestAxis = 2;
     for ( i = 0; i < 3; ++i )
-        axisBias[i] = (int)((float)((float)((float)((float)(globalMaxs[i] - globalMins[i]) + 1.0) * 10.0)
-                                                            / (float)((float)(globalMaxs[smallestAxis] - globalMins[smallestAxis]) + 1.0))
-                                            + 0.4999999990686774);
+        axisBias[i] = (int)ceilf((float)((float)((float)((float)(globalMaxs[i] - globalMins[i]) + 1.0) * 10.0)
+                                                            / (float)((float)(globalMaxs[smallestAxis] - globalMins[smallestAxis]) + 1.0)));
     bestHeuristic = 0x80000000;
     for ( axisIndex = 0; axisIndex < 3; ++axisIndex )
     {
@@ -414,7 +413,7 @@ bool __cdecl PickAabbSplitPlane(
                                     - sideOnCount
                                     - 4 * sideSplitCount;
                 if ( !sideOnCount && !sideSplitCount && !prevMinCount )
-                    heuristic += (int)((float)(nextDist - dist) + 9.313225746154785e-10);
+                    heuristic += SnapFloatToInt((float)(nextDist - dist));
                 if ( heuristic > bestHeuristic )
                 {
                     bestHeuristic = heuristic;
