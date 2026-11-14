@@ -59,7 +59,7 @@ target_include_directories(KisakBlack PUBLIC "${DXSDK_DIR}/Include")
 target_link_directories(KisakBlack PUBLIC "${DXSDK_DIR}/Lib/x86")
 target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs/libvpx-1.5.0")
 target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/steam/redistributable_bin")
-target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/binklib")
+target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/binklib")
 target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/nvapi")
 
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT  /O2 /MP /W3 ${MSVC_WARNING_DISABLES} /permissive")

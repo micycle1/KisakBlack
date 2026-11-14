@@ -4,20 +4,20 @@
 # src/
 # ======================================================================
 
-# ----- src/CubeMapGenLib -----
+# ----- third_party/CubeMapGenLib -----
 set(SRC_CUBEMAPGENLIB
-	"${SRC_DIR}/CubeMapGenLib/CBBoxInt32.cpp"
-	"${SRC_DIR}/CubeMapGenLib/CBBoxInt32.h"
-	"${SRC_DIR}/CubeMapGenLib/CCubeMapProcessor.cpp"
-	"${SRC_DIR}/CubeMapGenLib/CCubeMapProcessor.h"
-	"${SRC_DIR}/CubeMapGenLib/CImageSurface.cpp"
-	"${SRC_DIR}/CubeMapGenLib/CImageSurface.h"
-	"${SRC_DIR}/CubeMapGenLib/ErrorMsg.cpp"
-	"${SRC_DIR}/CubeMapGenLib/ErrorMsg.h"
-	"${SRC_DIR}/CubeMapGenLib/Types.h"
-	"${SRC_DIR}/CubeMapGenLib/VectorMacros.h"
-	"${SRC_DIR}/CubeMapGenLib/Version.h"
-	"${SRC_DIR}/CubeMapGenLib/resource.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CBBoxInt32.cpp"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CBBoxInt32.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CCubeMapProcessor.cpp"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CCubeMapProcessor.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CImageSurface.cpp"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/CImageSurface.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/ErrorMsg.cpp"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/ErrorMsg.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/Types.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/VectorMacros.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/Version.h"
+	"${THIRD_PARTY_DIR}/CubeMapGenLib/resource.h"
 )
 source_group("CubeMapGenLib" FILES ${SRC_CUBEMAPGENLIB})
 
@@ -171,14 +171,14 @@ set(BGAME_FILES
 	${SRC_BGAME}
 )
 
-# ----- src/binklib -----
+# ----- third_party/binklib -----
 set(SRC_BINKLIB
-	"${SRC_DIR}/binklib/bink.h"
-	"${SRC_DIR}/binklib/binktextures.cpp"
-	"${SRC_DIR}/binklib/binktextures.h"
-	"${SRC_DIR}/binklib/dx9rad3d.cpp"
-	"${SRC_DIR}/binklib/rad3d.h"
-	"${SRC_DIR}/binklib/radbase.h"
+	"${THIRD_PARTY_DIR}/binklib/bink.h"
+	"${THIRD_PARTY_DIR}/binklib/binktextures.cpp"
+	"${THIRD_PARTY_DIR}/binklib/binktextures.h"
+	"${THIRD_PARTY_DIR}/binklib/dx9rad3d.cpp"
+	"${THIRD_PARTY_DIR}/binklib/rad3d.h"
+	"${THIRD_PARTY_DIR}/binklib/radbase.h"
 )
 source_group("binklib" FILES ${SRC_BINKLIB})
 
