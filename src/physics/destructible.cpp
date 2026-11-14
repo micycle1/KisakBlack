@@ -2360,7 +2360,6 @@ void __cdecl CG_DestructibleRadiusDamage(
         if ( g_destructible_events_count >= 64 )
         {
             Com_PrintWarning(20, "CG_DestructibleRadiusDamage: Destructible events buffer full.\n");
-            Destructible_DumpEventInfo();
         }
         else
         {
@@ -2792,7 +2791,6 @@ void __cdecl CG_DestructibleHitEvent(int localClientNum, int event, const entity
         if ( g_destructible_events_count >= 64 )
         {
             Com_PrintWarning(20, "CG_DestructibleHitEvent: Destructible events buffer full.\n");
-            Destructible_DumpEventInfo();
         }
         else
         {
@@ -2965,7 +2963,6 @@ void __cdecl CG_DestructibleDamage(
         if ( g_destructible_events_count >= 64 )
         {
             Com_PrintWarning(20, "CG_DestructibleDamage: Destructible events buffer full.\n");
-            Destructible_DumpEventInfo();
         }
         else
         {
