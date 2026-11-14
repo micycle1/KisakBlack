@@ -147,6 +147,7 @@ struct vehicle_cache_t // sizeof=0x788
     colgeom_visitor_inlined_t<200> proximity_data;
     int wheel_mask;
 };
+static_assert(sizeof(vehicle_cache_t) == 0x788);
 
 struct cgVehicleWheelEffect // sizeof=0x8
 {                                       // XREF: cgVehicle_s/r

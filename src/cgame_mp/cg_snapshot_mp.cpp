@@ -220,7 +220,7 @@ void __cdecl CG_ShutdownEntity(int localClientNum, centity_s *cent, bool shutdow
     {
         if ( cent->vehicle->vehicle_cache )
         {
-            MT_Free((unsigned char *)cent->vehicle->vehicle_cache, 1928, SCRIPTINSTANCE_SERVER);
+            MT_Free((unsigned char *)cent->vehicle->vehicle_cache, sizeof(vehicle_cache_t), SCRIPTINSTANCE_SERVER); // must match the MT_Alloc in cg_vehicle.cpp
             cent->vehicle->vehicle_cache = 0;
         }
         MT_Free((unsigned char *)cent->vehicle, 84, SCRIPTINSTANCE_SERVER);

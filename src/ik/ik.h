@@ -315,6 +315,7 @@ struct __declspec(align(16)) IKState // sizeof=0xE60
     // padding byte
     // padding byte
 };
+static_assert(sizeof(IKState) == 0xE60);
 
 void __cdecl IK_AllocateLocalClientMemory(void *ikStatesBuf, int localClientIndex);
 void __cdecl IK_InitSystem();

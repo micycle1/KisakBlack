@@ -2072,7 +2072,8 @@ void __cdecl R_StreamUpdate_End()
     Sys_LeaveCriticalSection(CRITSECT_STREAM_SYNC_COMMAND);
 }
 
-float4 s_viewPos;
+// 16-byte aligned in the original: MultiplePointDistSqFromBounds asserts ((uint)&s_viewPos.v[0] & 15) == 0.
+__declspec(align(16)) float4 s_viewPos;
 void __cdecl R_Stream_UpdateStaticModelsCmd(char *data)
 {
     PROF_SCOPED("R_Stream_UpdateStaticModelsCmd");

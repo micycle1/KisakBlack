@@ -779,7 +779,7 @@ void __cdecl    SV_SpawnServer(int controllerIndex, char *server, int mapIsPrelo
 
 }
 
-const int ikStateSize = 3680;
+const int ikStateSize = sizeof(IKState); // 3680 (0xE60) in the original; asserted in ik.h
 unsigned __int8 *sv_ikBuf;
 char *__cdecl SV_AllocateClientMemory_SizeRequired(int maxLocalClients, int maxClients)
 {

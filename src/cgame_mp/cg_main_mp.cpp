@@ -1881,6 +1881,9 @@ void __cdecl CG_RegisterDvars()
     CG_SetupSplitscreenDvars();
 }
 
+// One IK state per client entity (IK_FindFreeIKState only accepts entityNum < 32).
+#define CG_IK_STATES_SIZE (32 * sizeof(IKState))
+
 int __cdecl CG_AllocateClientMemory_SizeRequired(int maxLocalClients)
 {
     int localClientNum; // [esp+0h] [ebp-8h]
@@ -1888,7 +1891,7 @@ int __cdecl CG_AllocateClientMemory_SizeRequired(int maxLocalClients)
 
     size = 907268 * maxLocalClients;
     for ( localClientNum = 0; localClientNum < maxLocalClients; ++localClientNum )
-        size += 1062080;
+        size += 1062080; // includes 117760 for the IK states
     return size;
 }
 
@@ -1906,8 +1909,9 @@ void __cdecl CG_AllocateClientMemory(HunkUser *hunk, int maxLocalClients)
         cg_entitiesArray[localClientNum] = (centity_s *)Hunk_UserAlloc(hunk, 827392, 4, "cg_entitiesArray");
         cg_entityOriginArray[localClientNum] = (float (*)[3])Hunk_UserAlloc(hunk, 18432, 4, "cg_entityOriginArray");
         cg_destructibles[localClientNum] = (Destructible *)Hunk_UserAlloc(hunk, 24768, 4, "cg_destructibles");
-        cg_ikBuf[localClientNum] = (unsigned __int8 *)Hunk_UserAlloc(hunk, 117760, 16, "ikStatesArray");
-        memset(cg_ikBuf[localClientNum], 0, 0x1CC00u);
+        // 117760 (32 * 0xE60) in the original; ik.h asserts sizeof(IKState) == 0xE60 so this stays identical.
+        cg_ikBuf[localClientNum] = (unsigned __int8 *)Hunk_UserAlloc(hunk, CG_IK_STATES_SIZE, 16, "ikStatesArray");
+        memset(cg_ikBuf[localClientNum], 0, CG_IK_STATES_SIZE);
         IK_AllocateLocalClientMemory(cg_ikBuf[localClientNum], localClientNum);
     }
 }
