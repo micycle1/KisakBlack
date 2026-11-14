@@ -1255,7 +1255,8 @@ struct compare_spawninfluencer_sort
 {
     bool operator()(const SpawnInfluencer *a, const SpawnInfluencer *b) const
     {
-        return a->expireTime < b->expireTime;
+        // SpawnSystem_ComputePointWeight's early-out relies on this order.
+        return a->bounds[0] < b->bounds[0];
     }
 };
 
