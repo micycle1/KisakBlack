@@ -198,17 +198,7 @@ Destructible *__cdecl CG_GetDestructibleByIndex(int localClientNum, int index)
     unsigned int indexa; // [esp+Ch] [ebp+Ch]
 
     indexa = index - 1;
-    if ( indexa >= 0x40
-        && !Assert_MyHandler(
-                    "C:\\projects_pc\\cod\\codsrc\\src\\physics\\destructible.cpp",
-                    434,
-                    0,
-                    "index doesn't index MAX_DESTRUCTIBLES\n\t%i not in [0, %i)",
-                    indexa,
-                    64) )
-    {
-        __debugbreak();
-    }
+    iassert(indexa < 144); // cg_destructibles has 144 entries
     return &cg_destructibles[localClientNum][indexa];
 }
 
