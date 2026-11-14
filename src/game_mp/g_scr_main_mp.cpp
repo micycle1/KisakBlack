@@ -10716,17 +10716,17 @@ void GScr_SetMatchFlag()
         if ( archived )
         {
             if ( value )
-                level.matchState.archivedState.matchUIVisibilityFlags |= 1 << flagBit >> 4;
+                level.matchState.archivedState.matchUIVisibilityFlags |= (1 << flagBit) >> 4;
             else
-                level.matchState.archivedState.matchUIVisibilityFlags &= ~(1 << flagBit >> 4);
+                level.matchState.archivedState.matchUIVisibilityFlags &= ~((1 << flagBit) >> 4);
         }
         else if ( value )
         {
-            level.matchState.unarchivedState.matchUIVisibilityFlags |= 1 << flagBit >> 4;
+            level.matchState.unarchivedState.matchUIVisibilityFlags |= (1 << flagBit) >> 4;
         }
         else
         {
-            level.matchState.unarchivedState.matchUIVisibilityFlags &= ~(1 << flagBit >> 4);
+            level.matchState.unarchivedState.matchUIVisibilityFlags &= ~((1 << flagBit) >> 4);
         }
     }
 }
