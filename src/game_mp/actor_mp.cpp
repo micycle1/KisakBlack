@@ -663,46 +663,10 @@ void __cdecl Actor_FreeExpendable()
     Actor_ClearPath(pExpendable);
     Scr_Notify(pExpendable->ent, scr_const.death, 0);
     G_FreeEntity(pExpendable->ent);
-    if ( pExpendable->ent->actor
-        && !Assert_MyHandler(
-                    "C:\\projects_pc\\cod\\codsrc\\src\\game_mp\\actor_mp.cpp",
-                    753,
-                    0,
-                    "%s",
-                    "pExpendable->ent->actor == NULL") )
-    {
-        __debugbreak();
-    }
-    if ( pExpendable->ent->sentient
-        && !Assert_MyHandler(
-                    "C:\\projects_pc\\cod\\codsrc\\src\\game_mp\\actor_mp.cpp",
-                    754,
-                    0,
-                    "%s",
-                    "pExpendable->ent->sentient == NULL") )
-    {
-        __debugbreak();
-    }
-    if ( pExpendable->inuse
-        && !Assert_MyHandler(
-                    "C:\\projects_pc\\cod\\codsrc\\src\\game_mp\\actor_mp.cpp",
-                    756,
-                    0,
-                    "%s",
-                    "!pExpendable->inuse") )
-    {
-        __debugbreak();
-    }
-    if ( pExpendable->sentient->inuse
-        && !Assert_MyHandler(
-                    "C:\\projects_pc\\cod\\codsrc\\src\\game_mp\\actor_mp.cpp",
-                    757,
-                    0,
-                    "%s",
-                    "!pExpendable->sentient->inuse") )
-    {
-        __debugbreak();
-    }
+    iassert(pExpendable->ent->actor == NULL);
+    iassert(pExpendable->ent->sentient == NULL);
+    iassert(!pExpendable->inuse);
+    iassert(!pExpendable->sentient || !pExpendable->sentient->inuse);
 }
 
 bool __cdecl Actor_IsDeletable(actor_s *actor)
