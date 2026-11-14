@@ -4868,7 +4868,7 @@ void Path_UpdateMovementDelta(actor_s *self, float fMoveDist)
     self->Physics.vWishDelta[2] = fMoveDist * perp[2];
 
     self->moveHistory[moveHistoryIndex][0] = vLookDir[0];
-    self->moveHistory[moveHistoryIndex][0] = vLookDir[1];
+    self->moveHistory[moveHistoryIndex][1] = vLookDir[1];
 
     Actor_UpdateMoveHistory(self);
 }
