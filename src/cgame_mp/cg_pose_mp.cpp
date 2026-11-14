@@ -7,6 +7,7 @@
 #include <cgame/cg_drawtools.h>
 #include <client_mp/cl_pose_mp.h>
 #include <xanim/dobj_skel.h>
+#include <xanim/xmodel_utils.h>
 
 float recoilVec[3] = { -1.0, 0.0, 0.0 };
 float ysScale = 1.0f;
@@ -447,81 +448,157 @@ void    CG_Vehicle_DoControllers(const cpose_t *pose, const DObj *obj, int *part
     }
 }
 #endif
-void CG_Vehicle_DoControllers(const cpose_t *pose, const DObj *obj, int *partBits)
+// Reconstructed from the decompiled body in the #if 0 block above (same calls, guards and math, readable types).
+void __cdecl CG_Vehicle_DoControllers(const cpose_t *pose, const DObj *obj, int *partBits)
 {
+    float bodyAngles[3] = { 0.0f, 0.0f, 0.0f };
+    float turretAngles[3] = { 0.0f, 0.0f, 0.0f };
+    float barrelAngles[3] = { 0.0f, 0.0f, 0.0f };
+    float steerAnglesYaw[3] = { 0.0f, 0.0f, 0.0f };
+    float steerAnglesPitch[3] = { 0.0f, 0.0f, 0.0f };
+    float gunnerTurretAngles[4][3];
+    float gunnerBarrelAngles[4][3];
+    float barrelOffset[3];
+    float minigunAngles[3];
+    float tempAxis[4][3];
+    unsigned __int8 children[4];
+    float steerYaw;
+    float suspTravel;
+    int i;
+
     iassert(obj);
 
-    float bodyAngles[3] = { 0 };
-    float turretAngles[4] = { 0 };
-    float barrelAngles[3] = { 0 };
-    float steerYaw = 0.0f;
-    float steerAnglesPitch[3] = { 0 };
-    float steerAnglesYaw[3] = { 0 };
-    float minigunAngles[3] = { 0 };
-    float barrelOffset[5] = { 0 };
-    float gunnerTurretAngles[12] = { 0 };
-    float gunnerBarrelAngles[4][3] = { 0 };
-
-    // Main vehicle angles
-    steerAnglesYaw[2] = pose->vehicle.pitch * 0.0054931641f;
-    bodyAngles[1] = pose->vehicle.roll * 0.0054931641f;
-    bodyAngles[2] = pose->vehicle.barrelPitch * 0.0054931641f;
-    turretAngles[0] = pose->vehicle.yaw * 0.0054931641f;
-    steerYaw = pose->vehicle.steerPitch * 0.0054931641f;
-
-    // Set main tags
-    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_body, vec3_origin, &steerAnglesYaw[2]);
-    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_turret, vec3_origin, &barrelAngles[2]);
-    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_barrel, vec3_origin, &bodyAngles[2]);
-
-    // Barrel recoil
-    if (pose->vehicle.barrelRecoil > 0.0f) {
-        barrelOffset[2] = pose->vehicle.barrelRecoil;
-        minigunAngles[2] = barrelOffset[2] * recoilVec[0];
-        barrelOffset[0] = barrelOffset[2] * recoilVec[1];
-        barrelOffset[1] = barrelOffset[2] * recoilVec[2];
-        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_barrel_recoil, &minigunAngles[2], vec3_origin);
+    bodyAngles[0] = (float)pose->vehicle.pitch * 0.0054931641f;
+    bodyAngles[2] = (float)pose->vehicle.roll * 0.0054931641f;
+    barrelAngles[0] = (float)pose->vehicle.barrelPitch * 0.0054931641f;
+    turretAngles[1] = (float)pose->vehicle.yaw * 0.0054931641f;
+    steerYaw = (float)pose->vehicle.steerYaw * 0.0054931641f;
+    steerAnglesPitch[0] = (float)pose->vehicle.steerPitch * 0.0054931641f;
+    for (i = 0; i < 4; ++i)
+    {
+        gunnerBarrelAngles[i][0] = (float)pose->vehicle.gunnerPitch[i] * 0.0054931641f;
+        gunnerBarrelAngles[i][1] = 0.0f;
+        gunnerBarrelAngles[i][2] = 0.0f;
+        gunnerTurretAngles[i][0] = 0.0f;
+        gunnerTurretAngles[i][1] = (float)pose->vehicle.gunnerYaw[i] * 0.0054931641f;
+        gunnerTurretAngles[i][2] = 0.0f;
     }
 
-    // Minigun spin
-    if (pose->vehicle.tag_minigun_spin != 254) {
-        float spin = pose->vehicle.minigun_rotation * 0.0054931641f;
-        minigunAngles[1] = spin;
-        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_minigun_spin, vec3_origin, &spin);
+    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_body, vec3_origin, bodyAngles);
+    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_turret, vec3_origin, turretAngles);
+    DObjSetLocalTag(obj, partBits, pose->vehicle.tag_barrel, vec3_origin, barrelAngles);
+    if (pose->vehicle.barrelRecoil > 0.0f)
+    {
+        barrelOffset[0] = pose->vehicle.barrelRecoil * recoilVec[0];
+        barrelOffset[1] = pose->vehicle.barrelRecoil * recoilVec[1];
+        barrelOffset[2] = pose->vehicle.barrelRecoil * recoilVec[2];
+        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_barrel_recoil, barrelOffset, vec3_origin);
+    }
+    for (i = 0; i < 4; ++i)
+    {
+        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_gunner_turret[i], vec3_origin, gunnerTurretAngles[i]);
+        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_gunner_barrel[i], vec3_origin, gunnerBarrelAngles[i]);
+    }
+    if (pose->vehicle.tag_minigun_spin != 254)
+    {
+        minigunAngles[0] = 0.0f;
+        minigunAngles[1] = 0.0f;
+        minigunAngles[2] = (float)pose->vehicle.minigun_rotation * 0.0054931641f;
+        DObjSetLocalTag(obj, partBits, pose->vehicle.tag_minigun_spin, vec3_origin, minigunAngles);
     }
 
-    // Gunner wheels / turrets
-    for (int i = 0; i < 4; ++i) {
-        int boneIndex = pose->vehicle.tag_gunner_turret[i];
-        gunnerTurretAngles[i * 3] = pose->vehicle.gunnerYaw[i] * 0.0054931641f;
-        gunnerTurretAngles[i * 3 + 2] = pose->vehicle.gunnerPitch[i] * 0.0054931641f;
+    suspTravel = pose->vehicle.time;
+    AnglesToAxis(pose->angles, tempAxis);
+    tempAxis[3][0] = pose->origin[0];
+    tempAxis[3][1] = pose->origin[1];
+    tempAxis[3][2] = pose->origin[2];
 
-        if (DObjSetRotTransIndex(obj, partBits, boneIndex)) {
-            DObjSetLocalTagInternal(obj, vec3_origin, &gunnerTurretAngles[i * 3], boneIndex);
+    const XModel *model = DObjGetModel(obj, 0);
+    const DObjAnimMat *boneMtxList = XModelGetBasePose(model);
+    centity_s *cent = CG_GetEntity(pose->localClientNum, DObjGetEntNum(obj) - 1);
+
+    if (cent->nitrousVeh)
+    {
+        if (!DObjGetRotTransArray(obj))
+            return;
+
+        for (i = 0; i < 6; ++i)
+        {
+            unsigned int boneIndex = pose->vehicle.wheelBoneIndex[i];
+            if (boneIndex < 0xFE && DObjSetRotTransIndex(obj, partBits, boneIndex))
+            {
+                const float wheelOffset[3] = { 0.0f, 0.0f, pose->vehicle.wheelHeight[i] };
+                float wheelAngles[3] = { 0.0f, pose->vehicle.nitrousWheelYaw[i], 0.0f };
+                DObjSetLocalTagInternal(obj, wheelOffset, wheelAngles, boneIndex);
+
+                wheelAngles[0] = pose->vehicle.nitrousWheelRotation[i];
+                wheelAngles[1] = 0.0f;
+                wheelAngles[2] = 0.0f;
+                int numChildren = DObjGetChildBones(obj, boneIndex, children, 4);
+                for (int c = 0; c < numChildren; ++c)
+                {
+                    if (DObjSetRotTransIndex(obj, partBits, children[c]))
+                        DObjSetLocalTagInternal(obj, vec3_origin, wheelAngles, children[c]);
+                }
+            }
+        }
+        for (i = 0; i < 4; ++i)
+        {
+            unsigned int boneIndex = pose->vehicle.tag_extra_tank_wheels[i];
+            if (boneIndex < 0xFE)
+            {
+                const float wheelAngles[3] = { pose->vehicle.nitrousWheelRotation[i] * pose->vehicle.extra_wheel_rot_scale, 0.0f, 0.0f };
+                if (DObjSetRotTransIndex(obj, partBits, boneIndex))
+                    DObjSetLocalTagInternal(obj, vec3_origin, wheelAngles, boneIndex);
+            }
+        }
+        return;
+    }
+
+    for (i = 0; i < 6; ++i)
+    {
+        unsigned int boneIndex = pose->vehicle.wheelBoneIndex[i];
+        if (boneIndex >= 0xFE || !DObjSetRotTransIndex(obj, partBits, boneIndex))
+            continue;
+
+        // base-pose wheel position in world space
+        const float *trans = boneMtxList[boneIndex].trans;
+        float partPos[3];
+        for (int r = 0; r < 3; ++r)
+            partPos[r] = trans[0] * tempAxis[0][r] + trans[1] * tempAxis[1][r] + trans[2] * tempAxis[2][r] + tempAxis[3][r];
+
+        // drop it along the vehicle's up axis by the suspension amount
+        float dist = (suspTravel + 40.0f) * pose->vehicle.wheelHeight[i];
+        if (dist - (40.0f - suspTravel) < 0.0f)
+            dist = 40.0f - suspTravel;
+        for (int r = 0; r < 3; ++r)
+            partPos[r] = partPos[r] + 40.0f * tempAxis[2][r] - dist * tempAxis[2][r] - tempAxis[3][r];
+
+        // back to vehicle-local space, relative to the base pose
+        float offset[3];
+        for (int r = 0; r < 3; ++r)
+            offset[r] = partPos[0] * tempAxis[r][0] + partPos[1] * tempAxis[r][1] + partPos[2] * tempAxis[r][2] - trans[r];
+
+        steerAnglesYaw[1] = (unsigned int)i > 1 ? 0.0f : steerYaw;
+        DObjSetLocalTagInternal(obj, offset, steerAnglesYaw, boneIndex);
+
+        if (steerAnglesPitch[0] != 0.0f)
+        {
+            int numChildren = DObjGetChildBones(obj, boneIndex, children, 4);
+            for (int c = 0; c < numChildren; ++c)
+            {
+                if (DObjSetRotTransIndex(obj, partBits, children[c]))
+                    DObjSetLocalTagInternal(obj, vec3_origin, steerAnglesPitch, children[c]);
+            }
         }
     }
 
-    // Wheels
-    for (int k = 0; k < 6; ++k) {
-        int wheelBone = pose->vehicle.wheelBoneIndex[k];
-        float wheelHeight = pose->vehicle.wheelHeight[k];
-        float wheelRotation = pose->vehicle.nitrousWheelRotation[k];
-
-        if (DObjSetRotTransIndex(obj, partBits, wheelBone)) {
-            float wheelPos[3] = { 0, 0, wheelHeight };
-            DObjSetLocalTagInternal(obj, wheelPos, &wheelRotation, wheelBone);
-        }
-    }
-
-    // Extra tank wheels
-    for (int m = 0; m < 4; ++m) {
-        int wheelBone = pose->vehicle.tag_extra_tank_wheels[m];
-        float angle = pose->vehicle.nitrousWheelRotation[m] * pose->vehicle.extra_wheel_rot_scale;
-        float wheelAngles[3] = { 0, 0, angle };
-
-        if (DObjSetRotTransIndex(obj, partBits, wheelBone)) {
-            DObjSetLocalTagInternal(obj, vec3_origin, &wheelAngles[2], wheelBone);
-        }
+    steerAnglesPitch[0] = steerAnglesPitch[0] * pose->vehicle.extra_wheel_rot_scale;
+    for (i = 0; i < 4; ++i)
+    {
+        unsigned int boneIndex = pose->vehicle.tag_extra_tank_wheels[i];
+        if (boneIndex < 0xFE && DObjSetRotTransIndex(obj, partBits, boneIndex))
+            DObjSetLocalTagInternal(obj, vec3_origin, steerAnglesPitch, boneIndex);
     }
 }
 
