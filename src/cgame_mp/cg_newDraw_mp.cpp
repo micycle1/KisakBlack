@@ -2830,9 +2830,8 @@ void __cdecl CG_DrawDemoControls(int localClientNum, const rectDef_s *rect, Mate
             {
                 if ( keyframeTime < startTime )
                     keyframeTime = startTime;
-                keyframeX = (float)(int)((float)((float)((float)((keyframeTime - startTime) / 1000) / (float)(duration / 1000))
-                                                                             * timelineWidth)
-                                                             - 0.4999999990686774)
+                keyframeX = (float)(int)floorf((float)((float)((float)((keyframeTime - startTime) / 1000) / (float)(duration / 1000))
+                                                                             * timelineWidth))
                                     + timelineX;
                 Demo_DrawVerticalLine(
                     &scrPlaceView[localClientNum],

@@ -2054,7 +2054,7 @@ void __cdecl HECmd_SetTimer_Internal(scr_entref_t entref, he_type_t type, const 
         Scr_Error(v3, 0);
     }
     v5 = Scr_GetFloat(0, SCRIPTINSTANCE_SERVER) * 1000.0;
-    time = (int)(v5 + 0.4999999990686774);
+    time = (int)ceilf(v5);
     if ( time <= 0 && type != HE_TYPE_TIMER_UP )
     {
         v4 = va("time %g should be > 0", (float)((float)time * 0.001));
@@ -2125,14 +2125,14 @@ void __cdecl HECmd_SetClock_Internal(scr_entref_t entref, he_type_t type, const 
         Scr_Error(v3, 0);
     }
     v10 = Scr_GetFloat(0, SCRIPTINSTANCE_SERVER) * 1000.0;
-    time = (int)(v10 + 0.4999999990686774);
+    time = (int)ceilf(v10);
     if ( time <= 0 && type != HE_TYPE_CLOCK_UP )
     {
         v4 = va("time %g should be > 0", (float)((float)time * 0.001));
         Scr_ParamError(0, v4, SCRIPTINSTANCE_SERVER);
     }
     v9 = Scr_GetFloat(1u, SCRIPTINSTANCE_SERVER) * 1000.0;
-    duration = (int)(v9 + 0.4999999990686774);
+    duration = (int)ceilf(v9);
     if ( duration <= 0 )
     {
         v5 = va("duration %g should be > 0", (float)((float)duration * 0.001));

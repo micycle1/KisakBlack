@@ -7669,10 +7669,10 @@ int __cdecl Item_ListBox_GetIndexForMouse(int contextIndex, itemDef_s *item, flo
         rect->horzAlign,
         rect->vertAlign);
     if ( Window_IsHorizontal(&item->window) )
-        return (int)((float)((float)(compareX - compareRect.x) / compareRect.w) - 0.4999999990686774)
+        return (int)floorf((float)((float)(compareX - compareRect.x) / compareRect.w))
                  + listPtr->startPos[contextIndex];
-    if ( (int)((float)((float)((float)(compareY - 2.0) - compareRect.y) / compareRect.h) - 0.4999999990686774) > 0 )
-        v5 = (int)((float)((float)((float)(compareY - 2.0) - compareRect.y) / compareRect.h) - 0.4999999990686774);
+    if ( (int)floorf((float)((float)((float)(compareY - 2.0) - compareRect.y) / compareRect.h)) > 0 )
+        v5 = (int)floorf((float)((float)((float)(compareY - 2.0) - compareRect.y) / compareRect.h));
     else
         v5 = 0;
     return v5 + listPtr->startPos[contextIndex];

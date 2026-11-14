@@ -522,7 +522,7 @@ void __cdecl UpdateShellShockCamera(int localClientNum, const shellshock_parms_t
             scale = (float)dt / (float)parms->view.fadeTime;
         radius = parms->view.kickRadius * (float)((float)((float)(3.0 - (float)(2.0 * scale)) * scale) * scale);
         t = (float)time * parms->view.kickRate;
-        base = (int)(t - 0.4999999990686774);
+        base = (int)floorf(t);
         ta = t - (float)base;
         {
             unsigned int idx = ((unsigned __int8)base + 61 * (unsigned __int8)duration) & 0x7F;

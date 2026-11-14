@@ -232,7 +232,7 @@ void __thiscall cCurve::GetPosition(float time, float *pos)
     {
         if ( i >= 4 )
         {
-            cNum = (int)((float)((float)(i - 4) / 3.0) - 0.4999999990686774);
+            cNum = (int)floorf((float)((float)(i - 4) / 3.0));
             i = 3 * cNum + 3;
         }
         else

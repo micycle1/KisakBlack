@@ -2507,9 +2507,8 @@ void __cdecl CheckVote()
     {
         if ( level.time - level.voteTime >= 0 )
         {
-            if ( level.voteYes <= (int)((float)((float)(level.numVotingClients - (level.voteNo + level.voteYes))
-                                                                                * g_voteAbstainWeight->current.value)
-                                                                + 0.4999999990686774)
+            if ( level.voteYes <= (int)ceilf((float)((float)(level.numVotingClients - (level.voteNo + level.voteYes))
+                                                                                * g_voteAbstainWeight->current.value))
                                                     + level.voteNo )
                 goto LABEL_11;
 LABEL_9:

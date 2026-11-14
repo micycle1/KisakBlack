@@ -234,12 +234,10 @@ LABEL_11:
                 result = sharedUiInfo.numCustomMatchGameTypes;
             break;
         case 107:
-            result = (int)((float)((float)CG_GetMatchScoreboardClientCount(localClientNum, TEAM_FREE) * 0.5)
-                                     + 0.4999999990686774);
+            result = (int)ceilf((float)((float)CG_GetMatchScoreboardClientCount(localClientNum, TEAM_FREE) * 0.5));
             break;
         case 108:
-            result = (int)((float)((float)CG_GetMatchScoreboardClientCount(localClientNum, TEAM_FREE) * 0.5)
-                                     - 0.4999999990686774);
+            result = (int)floorf((float)((float)CG_GetMatchScoreboardClientCount(localClientNum, TEAM_FREE) * 0.5));
             break;
         case 109:
             result = Live_GetMapCount();
@@ -3870,7 +3868,7 @@ char __cdecl UI_FeederDataExtended_InGamePlayers(
                 if ( cgameGlob->bgs.clientinfo[countIndex].infoValid )
                     ++numClients;
             }
-            a_count = (int)((float)((float)numClients * 0.5) + 0.4999999990686774);
+            a_count = (int)ceilf((float)((float)numClients * 0.5));
             for ( clientIndex = 0; clientIndex < 32; ++clientIndex )
             {
                 if ( cgameGlob->bgs.clientinfo[clientIndex].infoValid

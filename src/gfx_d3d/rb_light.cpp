@@ -49,7 +49,7 @@ void __cdecl R_ShowLightVisCachePoints(const float *viewOrigin, const DpvsPlane 
         {
             x = SnapFloatToInt((float)(*viewOrigin - -131072.0)) >> 5;
             y = SnapFloatToInt((float)(viewOrigin[1] - -131072.0)) >> 5;
-            z = (int)((float)(viewOrigin[2] - -131072.0) - 0.4999999990686774) >> 6;
+            z = (int)floorf((float)(viewOrigin[2] - -131072.0)) >> 6;
             origin[0] = (double)x * 32.0 + -131072.0;
             origin[1] = (double)y * 32.0 + -131072.0;
             origin[2] = (double)z * 64.0 + -131072.0;

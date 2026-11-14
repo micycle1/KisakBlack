@@ -518,7 +518,7 @@ char *__cdecl CG_GetMatchInGamePlayersInfo(
         break;
     case 'k':
     case 'l':
-        a_count = (int)((float)((float)matchScoreBoardData[localClientNum].numClients * 0.5) + 0.4999999990686774);
+        a_count = (int)ceilf((float)((float)matchScoreBoardData[localClientNum].numClients * 0.5));
         for (clientIndex = 0; clientIndex < 32; ++clientIndex)
         {
             if (cgameGlob->bgs.clientinfo[clientIndex].infoValid
@@ -617,7 +617,7 @@ char __cdecl CG_GetMatchInGamePlayersXUID(
         break;
     case 'k':
     case 'l':
-        a_count = (int)((float)((float)matchScoreBoardData[localClientNum].numClients * 0.5) + 0.4999999990686774);
+        a_count = (int)ceilf((float)((float)matchScoreBoardData[localClientNum].numClients * 0.5));
         for (clientIndex = 0; clientIndex < 32; ++clientIndex)
         {
             if (cgameGlob->bgs.clientinfo[clientIndex].infoValid
