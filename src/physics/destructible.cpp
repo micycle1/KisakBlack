@@ -552,7 +552,7 @@ unsigned int __cdecl DestructibleUpdate(gentity_s *ent, DObjModel_s *dobjModels,
     }
     else
     {
-        Com_Error(ERR_DROP, "Hit max destructible count [%d] when creating %s", 64, ddef->name);
+        Com_Error(ERR_DROP, "\x15Hit max destructible count [%d] when creating %s\n", 64, ddef->name);
     }
     if ( !ent->destructible->ddef
         && !Assert_MyHandler(
@@ -1613,7 +1613,7 @@ unsigned int __cdecl CG_DestructibleUpdate(
     }
     else
     {
-        Com_Error(ERR_DROP, "Hit max destructible count [%d] when creating %s", 64, ddef->name);
+        Com_Error(ERR_DROP, "\x15Hit max destructible count [%d] when creating %s\n", 64, ddef->name);
     }
     if ( numModels != 1
         && !Assert_MyHandler(
