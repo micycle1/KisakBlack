@@ -8,6 +8,7 @@ set(CMAKE_GENERATOR_PLATFORM "WIN32")
 
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(TL_DIR  "${CMAKE_CURRENT_SOURCE_DIR}/tl")
+set(THIRD_PARTY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/third_party")
 
 include(cmake_files.cmake)
 
@@ -47,18 +48,19 @@ target_compile_definitions(KisakBlack PUBLIC
 # ----- Include directories -----
 target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
-target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/libs")
-target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/libs/libtomcrypt-1.17/src/headers")
-target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/libs/libtommath-1.0")
-target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/libs/libvpx-1.5.0/include")
+target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party")
+target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs")
+target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs/libtomcrypt-1.17/src/headers")
+target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs/libtommath-1.0")
+target_include_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs/libvpx-1.5.0/include")
 target_include_directories(KisakBlack PUBLIC "${DXSDK_DIR}/Include")
 
 # ----- Library directories -----
 target_link_directories(KisakBlack PUBLIC "${DXSDK_DIR}/Lib/x86")
-target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/libs/libvpx-1.5.0")
-target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/steam/redistributable_bin")
+target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/libs/libvpx-1.5.0")
+target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/steam/redistributable_bin")
 target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/binklib")
-target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src/nvapi")
+target_link_directories(KisakBlack PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/third_party/nvapi")
 
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT  /O2 /MP /W3 ${MSVC_WARNING_DISABLES} /permissive")
 set(CMAKE_CXX_FLAGS_DEBUG   "${CMAKE_CXX_FLAGS_DEBUG} /MTd /Od /MP /W3 ${MSVC_WARNING_DISABLES} /permissive")

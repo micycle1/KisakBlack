@@ -1116,65 +1116,65 @@ set(IK_FILES
 	${SRC_IK}
 )
 
-# ----- src/jpeg -----
+# ----- third_party/jpeg -----
 set(SRC_JPEG
-	"${SRC_DIR}/jpeg/jcapimin.c"
-	"${SRC_DIR}/jpeg/jcapistd.c"
-	"${SRC_DIR}/jpeg/jccoefct.c"
-	"${SRC_DIR}/jpeg/jccolor.c"
-	"${SRC_DIR}/jpeg/jcdctmgr.c"
-	"${SRC_DIR}/jpeg/jchuff.c"
-	"${SRC_DIR}/jpeg/jchuff.h"
-	"${SRC_DIR}/jpeg/jcinit.c"
-	"${SRC_DIR}/jpeg/jcmainct.c"
-	"${SRC_DIR}/jpeg/jcmarker.c"
-	"${SRC_DIR}/jpeg/jcmaster.c"
-	"${SRC_DIR}/jpeg/jcomapi.c"
-	"${SRC_DIR}/jpeg/jconfig.h"
-	"${SRC_DIR}/jpeg/jcparam.c"
-	"${SRC_DIR}/jpeg/jcphuff.c"
-	"${SRC_DIR}/jpeg/jcprepct.c"
-	"${SRC_DIR}/jpeg/jcsample.c"
-	"${SRC_DIR}/jpeg/jctrans.c"
-	"${SRC_DIR}/jpeg/jdapimin.c"
-	"${SRC_DIR}/jpeg/jdapistd.c"
-	"${SRC_DIR}/jpeg/jdatadst.c"
-	"${SRC_DIR}/jpeg/jdatasrc.c"
-	"${SRC_DIR}/jpeg/jdcoefct.c"
-	"${SRC_DIR}/jpeg/jdcolor.c"
-	"${SRC_DIR}/jpeg/jdct.h"
-	"${SRC_DIR}/jpeg/jddctmgr.c"
-	"${SRC_DIR}/jpeg/jdhuff.c"
-	"${SRC_DIR}/jpeg/jdhuff.h"
-	"${SRC_DIR}/jpeg/jdinput.c"
-	"${SRC_DIR}/jpeg/jdmainct.c"
-	"${SRC_DIR}/jpeg/jdmarker.c"
-	"${SRC_DIR}/jpeg/jdmaster.c"
-	"${SRC_DIR}/jpeg/jdmerge.c"
-	"${SRC_DIR}/jpeg/jdphuff.c"
-	"${SRC_DIR}/jpeg/jdpostct.c"
-	"${SRC_DIR}/jpeg/jdsample.c"
-	"${SRC_DIR}/jpeg/jdtrans.c"
-	"${SRC_DIR}/jpeg/jerror.c"
-	"${SRC_DIR}/jpeg/jerror.h"
-	"${SRC_DIR}/jpeg/jfdctflt.c"
-	"${SRC_DIR}/jpeg/jfdctfst.c"
-	"${SRC_DIR}/jpeg/jfdctint.c"
-	"${SRC_DIR}/jpeg/jidctflt.c"
-	"${SRC_DIR}/jpeg/jidctfst.c"
-	"${SRC_DIR}/jpeg/jidctint.c"
-	"${SRC_DIR}/jpeg/jidctred.c"
-	"${SRC_DIR}/jpeg/jinclude.h"
-	"${SRC_DIR}/jpeg/jmemansi.c"
-	"${SRC_DIR}/jpeg/jmemmgr.c"
-	"${SRC_DIR}/jpeg/jmemsys.h"
-	"${SRC_DIR}/jpeg/jmorecfg.h"
-	"${SRC_DIR}/jpeg/jpegint.h"
-	"${SRC_DIR}/jpeg/jpeglib.h"
-	"${SRC_DIR}/jpeg/jquant1.c"
-	"${SRC_DIR}/jpeg/jquant2.c"
-	"${SRC_DIR}/jpeg/jutils.c"
-	"${SRC_DIR}/jpeg/jversion.h"
+	"${THIRD_PARTY_DIR}/jpeg/jcapimin.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcapistd.c"
+	"${THIRD_PARTY_DIR}/jpeg/jccoefct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jccolor.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcdctmgr.c"
+	"${THIRD_PARTY_DIR}/jpeg/jchuff.c"
+	"${THIRD_PARTY_DIR}/jpeg/jchuff.h"
+	"${THIRD_PARTY_DIR}/jpeg/jcinit.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcmainct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcmarker.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcmaster.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcomapi.c"
+	"${THIRD_PARTY_DIR}/jpeg/jconfig.h"
+	"${THIRD_PARTY_DIR}/jpeg/jcparam.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcphuff.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcprepct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jcsample.c"
+	"${THIRD_PARTY_DIR}/jpeg/jctrans.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdapimin.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdapistd.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdatadst.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdatasrc.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdcoefct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdcolor.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdct.h"
+	"${THIRD_PARTY_DIR}/jpeg/jddctmgr.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdhuff.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdhuff.h"
+	"${THIRD_PARTY_DIR}/jpeg/jdinput.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdmainct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdmarker.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdmaster.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdmerge.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdphuff.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdpostct.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdsample.c"
+	"${THIRD_PARTY_DIR}/jpeg/jdtrans.c"
+	"${THIRD_PARTY_DIR}/jpeg/jerror.c"
+	"${THIRD_PARTY_DIR}/jpeg/jerror.h"
+	"${THIRD_PARTY_DIR}/jpeg/jfdctflt.c"
+	"${THIRD_PARTY_DIR}/jpeg/jfdctfst.c"
+	"${THIRD_PARTY_DIR}/jpeg/jfdctint.c"
+	"${THIRD_PARTY_DIR}/jpeg/jidctflt.c"
+	"${THIRD_PARTY_DIR}/jpeg/jidctfst.c"
+	"${THIRD_PARTY_DIR}/jpeg/jidctint.c"
+	"${THIRD_PARTY_DIR}/jpeg/jidctred.c"
+	"${THIRD_PARTY_DIR}/jpeg/jinclude.h"
+	"${THIRD_PARTY_DIR}/jpeg/jmemansi.c"
+	"${THIRD_PARTY_DIR}/jpeg/jmemmgr.c"
+	"${THIRD_PARTY_DIR}/jpeg/jmemsys.h"
+	"${THIRD_PARTY_DIR}/jpeg/jmorecfg.h"
+	"${THIRD_PARTY_DIR}/jpeg/jpegint.h"
+	"${THIRD_PARTY_DIR}/jpeg/jpeglib.h"
+	"${THIRD_PARTY_DIR}/jpeg/jquant1.c"
+	"${THIRD_PARTY_DIR}/jpeg/jquant2.c"
+	"${THIRD_PARTY_DIR}/jpeg/jutils.c"
+	"${THIRD_PARTY_DIR}/jpeg/jversion.h"
 )
 source_group("jpeg" FILES ${SRC_JPEG})
 
@@ -1182,647 +1182,647 @@ set(JPEG_FILES
 	${SRC_JPEG}
 )
 
-# ----- src/libs -----
+# ----- third_party/libs -----
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/anubis.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/blowfish.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/cast5.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/des.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/kasumi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/khazad.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/kseed.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/multi2.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/noekeon.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc2.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc5.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc6.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/skipjack.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/xtea.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/anubis.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/blowfish.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/cast5.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/des.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/kasumi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/khazad.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/kseed.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/multi2.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/noekeon.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc2.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc5.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/rc6.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/skipjack.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/xtea.c"
 )
 source_group("libs/libtomcrypt-1.17/src/ciphers" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_AES
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/aes/aes.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/aes/aes_tab.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/aes/aes.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/aes/aes_tab.c"
 )
 source_group("libs/libtomcrypt-1.17/src/ciphers/aes" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_AES})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_SAFER
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/safer.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/safer_tab.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/saferp.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/safer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/safer_tab.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/safer/saferp.c"
 )
 source_group("libs/libtomcrypt-1.17/src/ciphers/safer" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_SAFER})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_TWOFISH
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/twofish/twofish.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/ciphers/twofish/twofish_tab.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/twofish/twofish.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/ciphers/twofish/twofish_tab.c"
 )
 source_group("libs/libtomcrypt-1.17/src/ciphers/twofish" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_CIPHERS_TWOFISH})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_CCM
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ccm/ccm_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ccm/ccm_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ccm/ccm_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ccm/ccm_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/encauth/ccm" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_CCM})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_EAX
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_addheader.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_decrypt_verify_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_encrypt_authenticate_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_addheader.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_decrypt_verify_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_encrypt_authenticate_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/eax/eax_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/encauth/eax" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_EAX})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_GCM
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_add_aad.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_add_iv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_gf_mult.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_mult_h.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_reset.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_add_aad.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_add_iv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_gf_mult.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_mult_h.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_reset.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/gcm/gcm_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/encauth/gcm" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_GCM})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_OCB
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_decrypt_verify_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_done_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_done_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_encrypt_authenticate_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_ntz.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_shift_xor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_test.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/s_ocb_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_decrypt_verify_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_done_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_done_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_encrypt_authenticate_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_ntz.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_shift_xor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/ocb_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/encauth/ocb/s_ocb_done.c"
 )
 source_group("libs/libtomcrypt-1.17/src/encauth/ocb" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_ENCAUTH_OCB})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/md2.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/md5.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd128.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd160.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd256.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd320.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/sha1.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/tiger.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/md2.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/md5.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd128.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd160.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd256.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/rmd320.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/sha1.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/tiger.c"
 )
 source_group("libs/libtomcrypt-1.17/src/hashes" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_CHC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/chc/chc.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/chc/chc.c"
 )
 source_group("libs/libtomcrypt-1.17/src/hashes/chc" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_CHC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_HELPER
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_filehandle.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_filehandle.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/helper/hash_memory_multi.c"
 )
 source_group("libs/libtomcrypt-1.17/src/hashes/helper" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_HELPER})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_SHA2
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/sha2/sha256.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/hashes/sha2/sha512.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/sha2/sha256.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/hashes/sha2/sha512.c"
 )
 source_group("libs/libtomcrypt-1.17/src/hashes/sha2" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HASHES_SHA2})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HEADERS
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_argchk.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_cfg.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_cipher.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_custom.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_hash.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_mac.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_macros.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_math.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_misc.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_pk.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_pkcs.h"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_prng.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_argchk.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_cfg.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_cipher.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_custom.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_hash.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_mac.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_macros.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_math.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_misc.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_pk.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_pkcs.h"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/headers/tomcrypt_prng.h"
 )
 source_group("libs/libtomcrypt-1.17/src/headers" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_HEADERS})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_F9
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_memory_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/f9/f9_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/f9" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_F9})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_HMAC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_memory_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/hmac/hmac_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/hmac" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_HMAC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_OMAC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_memory_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/omac/omac_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/omac" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_OMAC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_PELICAN
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pelican/pelican_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/pelican" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_PELICAN})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_PMAC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_memory_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_ntz.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_shift_xor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_ntz.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_shift_xor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/pmac/pmac_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/pmac" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_PMAC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_XCBC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_file.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_memory.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_memory_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_process.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_file.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_memory.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_memory_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_process.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/mac/xcbc/xcbc_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/mac/xcbc" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MAC_XCBC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MATH
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/gmp_desc.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/ltm_desc.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/rand_prime.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/tfm_desc.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/gmp_desc.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/ltm_desc.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/rand_prime.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/tfm_desc.c"
 )
 source_group("libs/libtomcrypt-1.17/src/math" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MATH})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MATH_FP
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/math/fp/ltc_ecc_fp_mulmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/math/fp/ltc_ecc_fp_mulmod.c"
 )
 source_group("libs/libtomcrypt-1.17/src/math/fp" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MATH_FP})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/burn_stack.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/error_to_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/zeromem.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/burn_stack.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/error_to_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/zeromem.c"
 )
 source_group("libs/libtomcrypt-1.17/src/misc" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_BASE64
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/base64/base64_decode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/base64/base64_encode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/base64/base64_decode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/base64/base64_encode.c"
 )
 source_group("libs/libtomcrypt-1.17/src/misc/base64" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_BASE64})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_CRYPT
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_argchk.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_cipher_descriptor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_cipher_is_valid.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher_any.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher_id.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_any.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_id.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_oid.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_prng.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_fsa.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_hash_descriptor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_hash_is_valid.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_ltc_mp_descriptor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_prng_descriptor.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_prng_is_valid.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_cipher.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_prng.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_cipher.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_prng.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_argchk.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_cipher_descriptor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_cipher_is_valid.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher_any.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_cipher_id.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_any.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_id.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_hash_oid.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_find_prng.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_fsa.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_hash_descriptor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_hash_is_valid.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_ltc_mp_descriptor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_prng_descriptor.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_prng_is_valid.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_cipher.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_register_prng.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_cipher.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/crypt/crypt_unregister_prng.c"
 )
 source_group("libs/libtomcrypt-1.17/src/misc/crypt" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_CRYPT})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_PKCS5
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/pkcs5/pkcs_5_1.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/misc/pkcs5/pkcs_5_2.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/pkcs5/pkcs_5_1.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/misc/pkcs5/pkcs_5_2.c"
 )
 source_group("libs/libtomcrypt-1.17/src/misc/pkcs5" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MISC_PKCS5})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CBC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_getiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_setiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_getiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_setiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cbc/cbc_start.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/cbc" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CBC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CFB
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_getiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_setiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_getiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_setiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/cfb/cfb_start.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/cfb" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CFB})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CTR
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_getiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_setiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_start.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_getiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_setiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ctr/ctr_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/ctr" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_CTR})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_ECB
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ecb/ecb_start.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/ecb" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_ECB})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_F8
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_getiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_setiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_start.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_test_mode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_getiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_setiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/f8/f8_test_mode.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/f8" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_F8})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_OFB
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_getiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_setiv.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_start.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_getiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_setiv.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/ofb/ofb_start.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/ofb" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_OFB})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_XTS
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_decrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_done.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_encrypt.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_init.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_mult_x.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_decrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_done.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_encrypt.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_mult_x.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/modes/xts/xts_test.c"
 )
 source_group("libs/libtomcrypt-1.17/src/modes/xts" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_MODES_XTS})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_BIT
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_decode_bit_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_encode_bit_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_length_bit_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_decode_bit_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_encode_bit_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/bit/der_length_bit_string.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/bit" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_BIT})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_BOOLEAN
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_decode_boolean.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_encode_boolean.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_length_boolean.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_decode_boolean.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_encode_boolean.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/boolean/der_length_boolean.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/boolean" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_BOOLEAN})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_CHOICE
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/choice/der_decode_choice.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/choice/der_decode_choice.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/choice" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_CHOICE})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_IA5
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_decode_ia5_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_encode_ia5_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_length_ia5_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_decode_ia5_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_encode_ia5_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/ia5/der_length_ia5_string.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/ia5" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_IA5})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_INTEGER
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_decode_integer.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_encode_integer.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_length_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_decode_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_encode_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/integer/der_length_integer.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/integer" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_INTEGER})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_OBJECT_IDENTIFIER
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_decode_object_identifier.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_encode_object_identifier.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_length_object_identifier.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_decode_object_identifier.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_encode_object_identifier.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier/der_length_object_identifier.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/object_identifier" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_OBJECT_IDENTIFIER})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_OCTET
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_decode_octet_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_encode_octet_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_length_octet_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_decode_octet_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_encode_octet_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/octet/der_length_octet_string.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/octet" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_OCTET})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_PRINTABLE_STRING
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_decode_printable_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_encode_printable_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_length_printable_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_decode_printable_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_encode_printable_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string/der_length_printable_string.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/printable_string" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_PRINTABLE_STRING})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SEQUENCE
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_ex.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_flexi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_encode_sequence_ex.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_encode_sequence_multi.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_length_sequence.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_sequence_free.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_ex.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_flexi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_decode_sequence_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_encode_sequence_ex.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_encode_sequence_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_length_sequence.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/sequence/der_sequence_free.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/sequence" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SEQUENCE})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SET
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/set/der_encode_set.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/set/der_encode_setof.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/set/der_encode_set.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/set/der_encode_setof.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/set" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SET})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SHORT_INTEGER
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_decode_short_integer.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_encode_short_integer.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_length_short_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_decode_short_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_encode_short_integer.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer/der_length_short_integer.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/short_integer" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_SHORT_INTEGER})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_UTCTIME
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_decode_utctime.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_encode_utctime.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_length_utctime.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_decode_utctime.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_encode_utctime.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utctime/der_length_utctime.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/utctime" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_UTCTIME})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_UTF8
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_decode_utf8_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_encode_utf8_string.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_length_utf8_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_decode_utf8_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_encode_utf8_string.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/asn1/der/utf8/der_length_utf8_string.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/asn1/der/utf8" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ASN1_DER_UTF8})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_DSA
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_decrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_encrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_export.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_free.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_import.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_make_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_shared_secret.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_sign_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_verify_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_verify_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_decrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_encrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_free.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_make_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_shared_secret.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_sign_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_verify_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/dsa/dsa_verify_key.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/dsa" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_DSA})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ECC
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_ansi_x963_export.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_ansi_x963_import.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_decrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_encrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_export.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_free.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_get_size.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_import.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_make_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_shared_secret.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_sign_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_sizes.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_test.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_verify_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_is_valid_idx.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_map.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mul2add.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mulmod.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mulmod_timing.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_points.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_projective_add_point.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_projective_dbl_point.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_ansi_x963_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_ansi_x963_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_decrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_encrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_free.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_get_size.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_make_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_shared_secret.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_sign_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_sizes.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_test.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ecc_verify_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_is_valid_idx.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_map.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mul2add.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mulmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_mulmod_timing.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_points.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_projective_add_point.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/ecc/ltc_ecc_projective_dbl_point.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/ecc" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_ECC})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_KATJA
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_decrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_encrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_export.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_exptmod.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_free.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_import.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_make_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_decrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_encrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_exptmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_free.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/katja/katja_make_key.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/katja" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_KATJA})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_PKCS1
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_i2osp.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_mgf1.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_oaep_decode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_oaep_encode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_os2ip.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_pss_decode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_pss_encode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_v1_5_decode.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_v1_5_encode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_i2osp.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_mgf1.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_oaep_decode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_oaep_encode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_os2ip.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_pss_decode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_pss_encode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_v1_5_decode.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/pkcs1/pkcs_1_v1_5_encode.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/pkcs1" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_PKCS1})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_RSA
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_decrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_encrypt_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_export.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_exptmod.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_free.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_import.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_make_key.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_sign_hash.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_verify_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_decrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_encrypt_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_exptmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_free.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_make_key.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_sign_hash.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/pk/rsa/rsa_verify_hash.c"
 )
 source_group("libs/libtomcrypt-1.17/src/pk/rsa" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PK_RSA})
 
 set(SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PRNGS
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/fortuna.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/rc4.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/rng_get_bytes.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/rng_make_prng.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/sprng.c"
-	"${SRC_DIR}/libs/libtomcrypt-1.17/src/prngs/yarrow.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/fortuna.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/rc4.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/rng_get_bytes.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/rng_make_prng.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/sprng.c"
+	"${THIRD_PARTY_DIR}/libs/libtomcrypt-1.17/src/prngs/yarrow.c"
 )
 source_group("libs/libtomcrypt-1.17/src/prngs" FILES ${SRC_LIBS_LIBTOMCRYPT_1_17_SRC_PRNGS})
 
 set(SRC_LIBS_LIBTOMMATH_1_0
-	"${SRC_DIR}/libs/libtommath-1.0/bn_error.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_fast_mp_invmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_fast_mp_montgomery_reduce.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_fast_s_mp_mul_digs.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_fast_s_mp_mul_high_digs.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_fast_s_mp_sqr.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_2expt.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_abs.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_add.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_add_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_addmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_and.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_clamp.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_clear.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_clear_multi.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_cmp.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_cmp_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_cmp_mag.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_cnt_lsb.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_copy.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_count_bits.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_div.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_div_2.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_div_2d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_div_3.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_div_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_dr_is_modulus.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_dr_reduce.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_dr_setup.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_exch.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_export.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_expt_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_expt_d_ex.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_exptmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_exptmod_fast.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_exteuclid.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_fread.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_fwrite.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_gcd.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_get_int.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_get_long.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_get_long_long.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_grow.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_import.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init_copy.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init_multi.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init_set.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init_set_int.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_init_size.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_invmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_invmod_slow.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_is_square.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_jacobi.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_karatsuba_mul.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_karatsuba_sqr.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_lcm.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_lshd.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mod_2d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mod_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_montgomery_calc_normalization.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_montgomery_reduce.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_montgomery_setup.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mul.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mul_2.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mul_2d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mul_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_mulmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_n_root.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_n_root_ex.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_neg.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_or.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_fermat.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_is_divisible.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_is_prime.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_miller_rabin.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_next_prime.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_rabin_miller_trials.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_prime_random_ex.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_radix_size.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_radix_smap.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_rand.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_read_radix.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_read_signed_bin.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_read_unsigned_bin.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_l.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_setup.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_setup_l.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_is_2k.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_is_2k_l.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_reduce_setup.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_rshd.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_set.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_set_int.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_set_long.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_set_long_long.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_shrink.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_signed_bin_size.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sqr.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sqrmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sqrt.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sqrtmod_prime.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sub.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_sub_d.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_submod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_to_signed_bin.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_to_signed_bin_n.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_to_unsigned_bin.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_to_unsigned_bin_n.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_toom_mul.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_toom_sqr.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_toradix.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_toradix_n.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_unsigned_bin_size.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_xor.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_mp_zero.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_prime_tab.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_reverse.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_add.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_exptmod.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_mul_digs.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_mul_high_digs.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_sqr.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bn_s_mp_sub.c"
-	"${SRC_DIR}/libs/libtommath-1.0/bncore.c"
-	"${SRC_DIR}/libs/libtommath-1.0/tommath.h"
-	"${SRC_DIR}/libs/libtommath-1.0/tommath_class.h"
-	"${SRC_DIR}/libs/libtommath-1.0/tommath_private.h"
-	"${SRC_DIR}/libs/libtommath-1.0/tommath_superclass.h"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_error.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_fast_mp_invmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_fast_mp_montgomery_reduce.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_fast_s_mp_mul_digs.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_fast_s_mp_mul_high_digs.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_fast_s_mp_sqr.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_2expt.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_abs.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_add.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_add_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_addmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_and.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_clamp.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_clear.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_clear_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_cmp.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_cmp_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_cmp_mag.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_cnt_lsb.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_copy.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_count_bits.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_div.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_div_2.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_div_2d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_div_3.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_div_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_dr_is_modulus.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_dr_reduce.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_dr_setup.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_exch.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_export.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_expt_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_expt_d_ex.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_exptmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_exptmod_fast.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_exteuclid.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_fread.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_fwrite.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_gcd.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_get_int.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_get_long.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_get_long_long.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_grow.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_import.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init_copy.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init_multi.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init_set.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init_set_int.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_init_size.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_invmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_invmod_slow.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_is_square.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_jacobi.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_karatsuba_mul.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_karatsuba_sqr.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_lcm.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_lshd.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mod_2d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mod_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_montgomery_calc_normalization.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_montgomery_reduce.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_montgomery_setup.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mul.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mul_2.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mul_2d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mul_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_mulmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_n_root.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_n_root_ex.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_neg.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_or.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_fermat.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_is_divisible.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_is_prime.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_miller_rabin.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_next_prime.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_rabin_miller_trials.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_prime_random_ex.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_radix_size.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_radix_smap.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_rand.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_read_radix.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_read_signed_bin.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_read_unsigned_bin.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_l.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_setup.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_2k_setup_l.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_is_2k.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_is_2k_l.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_reduce_setup.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_rshd.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_set.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_set_int.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_set_long.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_set_long_long.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_shrink.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_signed_bin_size.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sqr.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sqrmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sqrt.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sqrtmod_prime.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sub.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_sub_d.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_submod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_to_signed_bin.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_to_signed_bin_n.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_to_unsigned_bin.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_to_unsigned_bin_n.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_toom_mul.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_toom_sqr.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_toradix.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_toradix_n.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_unsigned_bin_size.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_xor.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_mp_zero.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_prime_tab.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_reverse.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_add.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_exptmod.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_mul_digs.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_mul_high_digs.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_sqr.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bn_s_mp_sub.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/bncore.c"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/tommath.h"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/tommath_class.h"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/tommath_private.h"
+	"${THIRD_PARTY_DIR}/libs/libtommath-1.0/tommath_superclass.h"
 )
 source_group("libs/libtommath-1.0" FILES ${SRC_LIBS_LIBTOMMATH_1_0})
 
@@ -1881,12 +1881,12 @@ set(LIBS_FILES
 	${SRC_LIBS_LIBTOMMATH_1_0}
 )
 
-# ----- src/minilzo -----
+# ----- third_party/minilzo -----
 set(SRC_MINILZO
-	"${SRC_DIR}/minilzo/lzoconf.h"
-	"${SRC_DIR}/minilzo/lzodefs.h"
-	"${SRC_DIR}/minilzo/minilzo.cpp"
-	"${SRC_DIR}/minilzo/minilzo.h"
+	"${THIRD_PARTY_DIR}/minilzo/lzoconf.h"
+	"${THIRD_PARTY_DIR}/minilzo/lzodefs.h"
+	"${THIRD_PARTY_DIR}/minilzo/minilzo.cpp"
+	"${THIRD_PARTY_DIR}/minilzo/minilzo.h"
 )
 source_group("minilzo" FILES ${SRC_MINILZO})
 
@@ -1922,9 +1922,9 @@ set(MONKEY_FILES
 	${SRC_MONKEY}
 )
 
-# ----- src/nvapi -----
+# ----- third_party/nvapi -----
 set(SRC_NVAPI
-	"${SRC_DIR}/nvapi/nvapi.h"
+	"${THIRD_PARTY_DIR}/nvapi/nvapi.h"
 )
 source_group("nvapi" FILES ${SRC_NVAPI})
 
@@ -2173,17 +2173,17 @@ set(SOUND_FILES
 	${SRC_SOUND}
 )
 
-# ----- src/speex -----
+# ----- third_party/speex -----
 set(SRC_SPEEX
-	"${SRC_DIR}/speex/speex.h"
-	"${SRC_DIR}/speex/speex_bits.h"
-	"${SRC_DIR}/speex/speex_callbacks.h"
-	"${SRC_DIR}/speex/speex_echo.h"
-	"${SRC_DIR}/speex/speex_header.h"
-	"${SRC_DIR}/speex/speex_jitter.h"
-	"${SRC_DIR}/speex/speex_preprocess.h"
-	"${SRC_DIR}/speex/speex_stereo.h"
-	"${SRC_DIR}/speex/speex_types.h"
+	"${THIRD_PARTY_DIR}/speex/speex.h"
+	"${THIRD_PARTY_DIR}/speex/speex_bits.h"
+	"${THIRD_PARTY_DIR}/speex/speex_callbacks.h"
+	"${THIRD_PARTY_DIR}/speex/speex_echo.h"
+	"${THIRD_PARTY_DIR}/speex/speex_header.h"
+	"${THIRD_PARTY_DIR}/speex/speex_jitter.h"
+	"${THIRD_PARTY_DIR}/speex/speex_preprocess.h"
+	"${THIRD_PARTY_DIR}/speex/speex_stereo.h"
+	"${THIRD_PARTY_DIR}/speex/speex_types.h"
 )
 source_group("speex" FILES ${SRC_SPEEX})
 
@@ -2191,28 +2191,28 @@ set(SPEEX_FILES
 	${SRC_SPEEX}
 )
 
-# ----- src/steam -----
+# ----- third_party/steam -----
 set(SRC_STEAM
-	"${SRC_DIR}/steam/isteamapps.h"
-	"${SRC_DIR}/steam/isteamclient.h"
-	"${SRC_DIR}/steam/isteamfriends.h"
-	"${SRC_DIR}/steam/isteamgamecoordinator.h"
-	"${SRC_DIR}/steam/isteamgameserver.h"
-	"${SRC_DIR}/steam/isteamgameserverstats.h"
-	"${SRC_DIR}/steam/isteamgamestats.h"
-	"${SRC_DIR}/steam/isteammasterserverupdater.h"
-	"${SRC_DIR}/steam/isteammatchmaking.h"
-	"${SRC_DIR}/steam/isteamnetworking.h"
-	"${SRC_DIR}/steam/isteamremotestorage.h"
-	"${SRC_DIR}/steam/isteamuser.h"
-	"${SRC_DIR}/steam/isteamuserstats.h"
-	"${SRC_DIR}/steam/isteamutils.h"
-	"${SRC_DIR}/steam/matchmakingtypes.h"
-	"${SRC_DIR}/steam/steam_api.h"
-	"${SRC_DIR}/steam/steam_gameserver.h"
-	"${SRC_DIR}/steam/steamclientpublic.h"
-	"${SRC_DIR}/steam/steamencryptedappticket.h"
-	"${SRC_DIR}/steam/steamtypes.h"
+	"${THIRD_PARTY_DIR}/steam/isteamapps.h"
+	"${THIRD_PARTY_DIR}/steam/isteamclient.h"
+	"${THIRD_PARTY_DIR}/steam/isteamfriends.h"
+	"${THIRD_PARTY_DIR}/steam/isteamgamecoordinator.h"
+	"${THIRD_PARTY_DIR}/steam/isteamgameserver.h"
+	"${THIRD_PARTY_DIR}/steam/isteamgameserverstats.h"
+	"${THIRD_PARTY_DIR}/steam/isteamgamestats.h"
+	"${THIRD_PARTY_DIR}/steam/isteammasterserverupdater.h"
+	"${THIRD_PARTY_DIR}/steam/isteammatchmaking.h"
+	"${THIRD_PARTY_DIR}/steam/isteamnetworking.h"
+	"${THIRD_PARTY_DIR}/steam/isteamremotestorage.h"
+	"${THIRD_PARTY_DIR}/steam/isteamuser.h"
+	"${THIRD_PARTY_DIR}/steam/isteamuserstats.h"
+	"${THIRD_PARTY_DIR}/steam/isteamutils.h"
+	"${THIRD_PARTY_DIR}/steam/matchmakingtypes.h"
+	"${THIRD_PARTY_DIR}/steam/steam_api.h"
+	"${THIRD_PARTY_DIR}/steam/steam_gameserver.h"
+	"${THIRD_PARTY_DIR}/steam/steamclientpublic.h"
+	"${THIRD_PARTY_DIR}/steam/steamencryptedappticket.h"
+	"${THIRD_PARTY_DIR}/steam/steamtypes.h"
 )
 source_group("steam" FILES ${SRC_STEAM})
 
@@ -2237,15 +2237,15 @@ set(STRINGED_FILES
 	${SRC_STRINGED}
 )
 
-# ----- src/tracy -----
+# ----- third_party/tracy -----
 set(SRC_TRACY_PUBLIC
-	"${SRC_DIR}/tracy/public/TracyClient.cpp"
+	"${THIRD_PARTY_DIR}/tracy/public/TracyClient.cpp"
 )
 source_group("tracy/public" FILES ${SRC_TRACY_PUBLIC})
 
 set(SRC_TRACY_PUBLIC_TRACY
-	"${SRC_DIR}/tracy/public/tracy/Tracy.hpp"
-	"${SRC_DIR}/tracy/public/tracy/TracyC.h"
+	"${THIRD_PARTY_DIR}/tracy/public/tracy/Tracy.hpp"
+	"${THIRD_PARTY_DIR}/tracy/public/tracy/TracyC.h"
 )
 source_group("tracy/public/tracy" FILES ${SRC_TRACY_PUBLIC_TRACY})
 
@@ -2531,29 +2531,29 @@ set(XANIM_FILES
 	${SRC_XANIM}
 )
 
-# ----- src/zlib -----
+# ----- third_party/zlib -----
 set(SRC_ZLIB
-	"${SRC_DIR}/zlib/adler32.c"
-	"${SRC_DIR}/zlib/compress.c"
-	"${SRC_DIR}/zlib/crc32.c"
-	"${SRC_DIR}/zlib/crc32.h"
-	"${SRC_DIR}/zlib/deflate.c"
-	"${SRC_DIR}/zlib/deflate.h"
-	"${SRC_DIR}/zlib/gzio.c"
-	"${SRC_DIR}/zlib/inffast.c"
-	"${SRC_DIR}/zlib/inffast.h"
-	"${SRC_DIR}/zlib/inffixed.h"
-	"${SRC_DIR}/zlib/inflate.c"
-	"${SRC_DIR}/zlib/inflate.h"
-	"${SRC_DIR}/zlib/inftrees.c"
-	"${SRC_DIR}/zlib/inftrees.h"
-	"${SRC_DIR}/zlib/trees.c"
-	"${SRC_DIR}/zlib/trees.h"
-	"${SRC_DIR}/zlib/uncompr.c"
-	"${SRC_DIR}/zlib/zconf.h"
-	"${SRC_DIR}/zlib/zlib.h"
-	"${SRC_DIR}/zlib/zutil.c"
-	"${SRC_DIR}/zlib/zutil.h"
+	"${THIRD_PARTY_DIR}/zlib/adler32.c"
+	"${THIRD_PARTY_DIR}/zlib/compress.c"
+	"${THIRD_PARTY_DIR}/zlib/crc32.c"
+	"${THIRD_PARTY_DIR}/zlib/crc32.h"
+	"${THIRD_PARTY_DIR}/zlib/deflate.c"
+	"${THIRD_PARTY_DIR}/zlib/deflate.h"
+	"${THIRD_PARTY_DIR}/zlib/gzio.c"
+	"${THIRD_PARTY_DIR}/zlib/inffast.c"
+	"${THIRD_PARTY_DIR}/zlib/inffast.h"
+	"${THIRD_PARTY_DIR}/zlib/inffixed.h"
+	"${THIRD_PARTY_DIR}/zlib/inflate.c"
+	"${THIRD_PARTY_DIR}/zlib/inflate.h"
+	"${THIRD_PARTY_DIR}/zlib/inftrees.c"
+	"${THIRD_PARTY_DIR}/zlib/inftrees.h"
+	"${THIRD_PARTY_DIR}/zlib/trees.c"
+	"${THIRD_PARTY_DIR}/zlib/trees.h"
+	"${THIRD_PARTY_DIR}/zlib/uncompr.c"
+	"${THIRD_PARTY_DIR}/zlib/zconf.h"
+	"${THIRD_PARTY_DIR}/zlib/zlib.h"
+	"${THIRD_PARTY_DIR}/zlib/zutil.c"
+	"${THIRD_PARTY_DIR}/zlib/zutil.h"
 )
 source_group("zlib" FILES ${SRC_ZLIB})
 
