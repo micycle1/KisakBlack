@@ -1903,9 +1903,9 @@ void    MissileImpact(gentity_s *ent, trace_t *trace, float *dir, float *endpos)
                             {
                                 MapHitLocationToRagdollBoneName(hitLocation, &boneName);
                                 if (other->client->ps.pm_type == 9
-                                    && *(int *)&g_scr_data.playerCorpseInfo[1504 * other->client->ps.corpseIndex + 4] >= 0)
+                                    && g_scr_data.playerCorpseInfo[other->client->ps.corpseIndex].entnum >= 0)
                                 {
-                                    entnum = *(int*)&g_scr_data.playerCorpseInfo[1504 * other->client->ps.corpseIndex + 4];
+                                    entnum = g_scr_data.playerCorpseInfo[other->client->ps.corpseIndex].entnum;
                                 }
                             }
                             else if (other->actor)
@@ -3065,9 +3065,9 @@ int __cdecl StickMissile(
             return isStuck;
         entnum = other->s.number;
         if ( other->client->ps.pm_type == 9
-            && (int)g_scr_data.actorXAnimTrees[376 * other->client->ps.corpseIndex - 1495] >= 0 )
+            && g_scr_data.playerCorpseInfo[other->client->ps.corpseIndex].entnum >= 0 )
         {
-            entnum = (int)g_scr_data.actorXAnimTrees[376 * other->client->ps.corpseIndex - 1495];
+            entnum = g_scr_data.playerCorpseInfo[other->client->ps.corpseIndex].entnum;
         }
         ent->flags |= 0x1000u;
         boneName = 0;
@@ -3161,7 +3161,7 @@ void __cdecl createRetrieveableProjectile(
         {
             target_ent = other;
             if (other->client->ps.pm_type == 9)
-                target_ent = (gentity_s *)((char *)sv.gentities + *(_DWORD *)&g_scr_data.playerCorpseInfo[1504 * other->client->ps.corpseIndex + 4] * sv.gentitySize);
+                target_ent = (gentity_s *)((char *)sv.gentities + g_scr_data.playerCorpseInfo[other->client->ps.corpseIndex].entnum * sv.gentitySize);
         }
         else if ( other->actor )
         {
